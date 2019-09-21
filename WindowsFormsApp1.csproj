@@ -1,0 +1,433 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{C49967A4-9348-42D4-8225-E8D9ACCE6265}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>WindowsFormsApp1</RootNamespace>
+    <AssemblyName>WindowsFormsApp1</AssemblyName>
+    <TargetFrameworkVersion>v4.5.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <UseVSHostingProcess>true</UseVSHostingProcess>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.DirectoryServices" />
+    <Reference Include="System.Messaging" />
+    <Reference Include="System.ServiceProcess" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Account.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Account.Designer.cs">
+      <DependentUpon>Account.cs</DependentUpon>
+    </Compile>
+    <Compile Include="AccountHead.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AccountHead.Designer.cs">
+      <DependentUpon>AccountHead.cs</DependentUpon>
+    </Compile>
+    <Compile Include="AccountMotor.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AccountMotor.Designer.cs">
+      <DependentUpon>AccountMotor.cs</DependentUpon>
+    </Compile>
+    <Compile Include="AdminPanel.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AdminPanel.Designer.cs">
+      <DependentUpon>AdminPanel.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ADMINSIGN.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ADMINSIGN.Designer.cs">
+      <DependentUpon>ADMINSIGN.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Ammount.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Ammount.Designer.cs">
+      <DependentUpon>Ammount.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Caregory.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Caregory.Designer.cs">
+      <DependentUpon>Caregory.cs</DependentUpon>
+    </Compile>
+    <Compile Include="DataRecover.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="DataRecover.Designer.cs">
+      <DependentUpon>DataRecover.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Expense.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Expense.Designer.cs">
+      <DependentUpon>Expense.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Form1.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form1.Designer.cs">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="GetDemandadmin.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="GetDemandadmin.Designer.cs">
+      <DependentUpon>GetDemandadmin.cs</DependentUpon>
+    </Compile>
+    <Compile Include="LoadingScreen.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="LoadingScreen.Designer.cs">
+      <DependentUpon>LoadingScreen.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Product.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Product.Designer.cs">
+      <DependentUpon>Product.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Purchase.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Purchase.Designer.cs">
+      <DependentUpon>Purchase.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Sale.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Sale.Designer.cs">
+      <DependentUpon>Sale.cs</DependentUpon>
+    </Compile>
+    <Compile Include="SignHR.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SignHR.Designer.cs">
+      <DependentUpon>SignHR.cs</DependentUpon>
+    </Compile>
+    <Compile Include="signupadmin.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="signupadmin.Designer.cs">
+      <DependentUpon>signupadmin.cs</DependentUpon>
+    </Compile>
+    <Compile Include="SpairPartsDataSet.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>SpairPartsDataSet.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="SpairPartsDataSet1.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>SpairPartsDataSet1.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="SpairPartsDataSet2.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>SpairPartsDataSet2.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="SpairPartsDataSet3.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>SpairPartsDataSet3.xsd</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="Account.resx">
+      <DependentUpon>Account.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AccountHead.resx">
+      <DependentUpon>AccountHead.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AccountMotor.resx">
+      <DependentUpon>AccountMotor.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AdminPanel.resx">
+      <DependentUpon>AdminPanel.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ADMINSIGN.resx">
+      <DependentUpon>ADMINSIGN.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Ammount.resx">
+      <DependentUpon>Ammount.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Caregory.resx">
+      <DependentUpon>Caregory.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DataRecover.resx">
+      <DependentUpon>DataRecover.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Expense.resx">
+      <DependentUpon>Expense.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form1.resx">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GetDemandadmin.resx">
+      <DependentUpon>GetDemandadmin.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="LoadingScreen.resx">
+      <DependentUpon>LoadingScreen.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Product.resx">
+      <DependentUpon>Product.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <EmbeddedResource Include="Purchase.resx">
+      <DependentUpon>Purchase.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Sale.resx">
+      <DependentUpon>Sale.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SignHR.resx">
+      <DependentUpon>SignHR.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="signupadmin.resx">
+      <DependentUpon>signupadmin.cs</DependentUpon>
+    </EmbeddedResource>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+    <None Include="SpairPartsDataSet.xsc">
+      <DependentUpon>SpairPartsDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="SpairPartsDataSet.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>SpairPartsDataSet.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="SpairPartsDataSet.xss">
+      <DependentUpon>SpairPartsDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="SpairPartsDataSet1.xsc">
+      <DependentUpon>SpairPartsDataSet1.xsd</DependentUpon>
+    </None>
+    <None Include="SpairPartsDataSet1.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>SpairPartsDataSet1.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="SpairPartsDataSet1.xss">
+      <DependentUpon>SpairPartsDataSet1.xsd</DependentUpon>
+    </None>
+    <None Include="SpairPartsDataSet2.xsc">
+      <DependentUpon>SpairPartsDataSet2.xsd</DependentUpon>
+    </None>
+    <None Include="SpairPartsDataSet2.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>SpairPartsDataSet2.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="SpairPartsDataSet2.xss">
+      <DependentUpon>SpairPartsDataSet2.xsd</DependentUpon>
+    </None>
+    <None Include="SpairPartsDataSet3.xsc">
+      <DependentUpon>SpairPartsDataSet3.xsd</DependentUpon>
+    </None>
+    <None Include="SpairPartsDataSet3.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>SpairPartsDataSet3.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="SpairPartsDataSet3.xss">
+      <DependentUpon>SpairPartsDataSet3.xsd</DependentUpon>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\okay.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\3.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\admin.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\HR.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\others.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\adminsign.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\HRS.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\administrative-tools-icon.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\s.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\form-background-1.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\inventory-management-guide-social-media.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Actions-view-process-users-icon.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Actions-view-process-users-icon %281%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Apps-File-Save-B-icon.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Reset-icon.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\new-file-icon.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\application-add-icon.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\calculator-icon.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Cash-register-icon %281%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Cash-register-icon.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\category-icon.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Column-Chart-icon.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\compose-icon.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Science-Plus2-Math-icon.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\truck-brown-icon.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\add.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\menu %281%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\menu.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\multiple-users-silhouette.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\user.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\cart.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\investment.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\shopping-bag %281%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\shopping-bag.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\shopping-cart.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\4-512.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\download.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\view_image %281%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\view_image.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\istockphoto-868776554-612x612.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\23138_Portrait-Mode_w1120_blur.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\print-icon.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\curriculum.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\rich-man.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\warehouse.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <WCFMetadata Include="Connected Services\" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>
